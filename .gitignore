@@ -1,4 +1,33 @@
-server/ 
+# Visual Studio temporary files
 .vs/
+*.user
+*.suo
+*.vscode/
+
+# Node.js dependencies (если используешь сервер)
 node_modules/
+
+# Logs
 *.log
+
+# OS temporary files
+.DS_Store
+Thumbs.db
+
+# Database / server data (если хочешь держать отдельно)
+server/db.json
+
+# Build folders (если будут)
+dist/
+build/
+
+# IDE / Editor config
+.idea/
+*.code-workspace
+
+# Misc
+*.tmp
+*.bak
+
+server/
+
