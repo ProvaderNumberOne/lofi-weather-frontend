@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lofi Weather</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="weather">Загружаем погоду...</div>
+
+  <!-- Плеер -->
+  <div id="player">
+    <button id="musicToggle">⏯ Музыка</button>
+    <input id="volumeControl" type="range" min="0" max="1" step="0.01" value="0.2"/>
+  </div>
+
+  <audio id="lofiPlayer" autoplay loop>
+    <source src="music/lofi.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

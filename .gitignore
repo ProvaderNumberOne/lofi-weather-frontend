@@ -1,0 +1,4 @@
+server/ 
+.vs/
+node_modules/
+*.log

@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background: url("backgrounds/default.jpg") no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#weather {
+  padding: 20px;
+  font-size: 1.5em;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+#player {
+  background: rgba(0,0,0,0.5);
+  padding: 15px;
+  border-radius: 12px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#musicToggle {
+  background: #222;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#musicToggle:hover {
+  background: #444;
+}
+
+#volumeControl {
+  cursor: pointer;
+}
