@@ -1,4 +1,4 @@
-const SERVER_URL = "https://lofi-weather-server.onrender.com"; // адрес Render сервера
+const SERVER_URL = "https://lofi-weather-server.onrender.com"; // Render сервер
 const apiKey = "ВСТАВЬ_СВОЙ_OPENWEATHER_API_KEY";
 
 const player = document.getElementById("lofiPlayer");
@@ -34,11 +34,15 @@ function getUserId() {
 
 // --- сервер ---
 async function saveLocationServer(id, lat, lon) {
-    await fetch(`${SERVER_URL}/location`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ id, lat, lon })
-    });
+    try {
+        await fetch(`${SERVER_URL}/location`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ id, lat, lon })
+        });
+    } catch (e) {
+        console.error("Ошибка fetch сервера:", e);
+    }
 }
 
 async function loadLocationServer(id) {
